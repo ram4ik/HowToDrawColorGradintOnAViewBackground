@@ -10,7 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        // Add image view
+        Image(systemName: "cloud.snow.fill")
+            .resizable()
+            .frame(width: 250, height: 250)
+            .foregroundColor(.blue)
+        
+            // Draw gradient on the background of an image view
+            .background(LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .top, endPoint: .bottom)).cornerRadius(50)
     }
 }
 
